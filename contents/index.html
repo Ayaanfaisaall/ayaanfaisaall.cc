@@ -9,13 +9,28 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
         
         body {
-            /* Deep, dark minimal gradient background */
-            background: linear-gradient(135deg, #09090b 0%, #18181b 100%);
+            /* Fallback dark color in case image takes a second to load */
+            background-color: #09090b; 
+            
+            /* The Desktop Background */
+            background-image: url('background/background.jpg');
+            background-size: cover;
+            background-position: left fixed; /* Fixed rakha hai taake scroll karne par background apni jagah lock rahay */
+            background-repeat: no-repeat;
+            
             color: #e4e4e7;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        /* Mobile Background Jugar (Proper Architecture) */
+        @media (max-width: 768px) {
+            body {
+                background-image: url('background/backgroundm.jpg');
+                background-position: center fixed; /* Mobile par center align theek rahega */
+            }
         }
 
         /* The "Frosted Glass" Aesthetic */
