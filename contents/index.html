@@ -1,1 +1,181 @@
-<h1>Portfolio Website is Live!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayaan Faisal | Graphic Designer</title>
+    <style>
+        /* Base Setup */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        
+        body {
+            /* Deep, dark minimal gradient background */
+            background: linear-gradient(135deg, #09090b 0%, #18181b 100%);
+            color: #e4e4e7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* The "Frosted Glass" Aesthetic */
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation */
+        header { 
+            width: 90%; 
+            max-width: 1200px; 
+            padding: 20px 30px; 
+            margin-top: 30px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        
+        .logo { 
+            font-weight: 700; 
+            font-size: 1.2rem; 
+            letter-spacing: 3px; 
+            text-transform: uppercase;
+        }
+        
+        nav a {
+            color: #a1a1aa;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover { color: #fff; }
+
+        /* Hero Section */
+        .hero { 
+            text-align: center; 
+            margin: 100px 20px; 
+            max-width: 700px; 
+        }
+        
+        .hero h1 { 
+            font-size: 3.5rem; 
+            font-weight: 800;
+            margin-bottom: 24px; 
+            background: linear-gradient(to right, #fff, #71717a); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            letter-spacing: -1px;
+        }
+        
+        .hero p { 
+            font-size: 1.2rem; 
+            color: #a1a1aa; 
+            line-height: 1.6; 
+        }
+
+        /* Portfolio Grid */
+        .portfolio-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 24px; 
+            width: 90%; 
+            max-width: 1200px; 
+            margin-bottom: 100px; 
+        }
+        
+        /* Individual Project Cards */
+        .project-card { 
+            height: 300px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            transition: transform 0.4s ease, background 0.4s ease; 
+            cursor: crosshair;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-card:hover { 
+            transform: translateY(-5px); 
+            background: rgba(255, 255, 255, 0.06); 
+        }
+        
+        .project-title { 
+            font-size: 1.1rem; 
+            font-weight: 500; 
+            letter-spacing: 1px;
+            opacity: 0; 
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            transform: translateY(10px);
+        }
+        
+        .project-card:hover .project-title { 
+            opacity: 1; 
+            transform: translateY(0);
+        }
+
+        /* Footer */
+        footer { 
+            margin-top: auto; 
+            padding: 40px 20px; 
+            text-align: center; 
+            color: #52525b; 
+            font-size: 0.85rem; 
+            width: 100%;
+        }
+        
+        .signature {
+            font-family: serif;
+            font-style: italic;
+            margin-top: 10px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="glass">
+        <div class="logo">Ayaan Faisal</div>
+        <nav>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="mailto:hello@ayaanfaisaall.cc">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Visual Identities & Brand Assets</h1>
+        <p>Freelance graphic designer specializing in minimal logo design and striking brand aesthetics. Bringing complex ideas into sharp focus.</p>
+    </section>
+
+    <section id="work" class="portfolio-grid">
+        <div class="project-card glass">
+            <div class="project-title">Logo Concept I</div>
+        </div>
+        
+        <div class="project-card glass">
+            <div class="project-title">Brand Identity II</div>
+        </div>
+        
+        <div class="project-card glass">
+            <div class="project-title">Typography & Assets</div>
+        </div>
+        
+        <div class="project-card glass">
+            <div class="project-title">Minimalist Mark</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ayaan Faisal. All rights reserved.</p>
+        <p class="signature">~ Zail</p>
+    </footer>
+
+</body>
+</html>
