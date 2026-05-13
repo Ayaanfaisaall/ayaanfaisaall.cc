@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="2000"
+   height="2000"
+   viewBox="0 0 2000 2000"
+   sodipodi:docname="xtwitter.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.22992554"
+     inkscape:cx="906.81531"
+     inkscape:cy="1259.1033"
+     inkscape:window-width="1900"
+     inkscape:window-height="1013"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1">
+    <inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="1"
+       id="page1"
+       width="2000"
+       height="2000"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="g1"
+     style="fill:#ffffff">
+    <path
+       id="path5"
+       d="M 975.08478,879.50124 724.81673,552.01172 H 590.43348 l 314.59349,411.66127 93.32771,122.11281 276.79172,362.2118 h 134.3832 L 1068.4125,1001.6113 975.08478,879.50124"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.309852" />
+    <path
+       id="path6"
+       d="M 1224.6093,1550.2427 931.27166,1166.3755 611.78241,1550.2427 H 416.82286 L 837.9749,1044.2624 383.63762,449.75727 H 775.38471 L 1042.168,798.89016 1332.7481,449.75727 h 194.9593 L 1135.4958,921.003 1616.3564,1550.2427 Z M 999.99698,18.981287 c -541.80877,0 -981.018863,439.216373 -981.018863,981.018623 0,541.80239 439.210093,981.01879 981.018863,981.01879 541.80882,0 981.02492,-439.2164 981.02492,-981.01879 0,-541.80225 -439.2161,-981.018623 -981.02492,-981.018623"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.309852" />
+  </g>
+</svg>

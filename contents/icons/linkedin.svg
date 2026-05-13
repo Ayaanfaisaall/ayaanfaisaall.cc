@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="2000"
+   height="2000"
+   viewBox="0 0 2000 2000"
+   sodipodi:docname="linkedin.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.22992554"
+     inkscape:cx="906.81531"
+     inkscape:cy="1259.1033"
+     inkscape:window-width="1900"
+     inkscape:window-height="1013"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1">
+    <inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="1"
+       id="page1"
+       width="2000"
+       height="2000"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <path
+     id="path11"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.437015"
+     d="M 1000 17.371094 C 457.31321 17.371094 17.369141 457.30241 17.369141 999.99805 C 17.369141 1542.6848 457.31321 1982.6289 1000 1982.6289 C 1542.6868 1982.6289 1982.6309 1542.6848 1982.6309 999.99805 C 1982.6309 457.30241 1542.6868 17.371094 1000 17.371094 z M 562.76562 425.74023 C 636.53409 425.74023 696.62305 485.84322 696.62305 559.60742 C 696.62305 633.3713 636.53409 693.4707 562.76562 693.4707 C 488.99748 693.4707 431.66016 633.3713 431.66016 559.60742 C 431.66016 485.84322 488.99748 425.74023 562.76562 425.74023 z M 1234.8535 794.55273 L 1294.9434 794.55273 C 1434.2644 794.55273 1546.2695 909.29544 1546.2695 1045.8848 L 1546.2695 1157.8906 L 1546.2695 1291.75 L 1546.2695 1545.8301 L 1327.7188 1545.8301 L 1327.7188 1543.1211 L 1327.7188 1477.5254 L 1327.7188 1144.2559 C 1325.0092 1059.5621 1267.6292 993.9668 1182.9355 993.9668 C 1098.2417 993.9668 1027.2259 1059.5621 1024.4727 1144.2559 L 1024.4727 1433.8242 L 1024.4727 1545.8301 L 805.92188 1545.8301 L 805.92188 802.75 L 1024.4727 802.75 L 1024.4727 906.56445 C 1070.9275 838.26765 1147.4065 794.55273 1234.8535 794.55273 z M 453.51172 802.75 L 674.77344 802.75 L 674.77344 1545.8301 L 453.51172 1545.8301 L 453.51172 802.75 z " />
+</svg>

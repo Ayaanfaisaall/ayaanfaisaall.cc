@@ -40,29 +40,72 @@ body {
     bottom: 0;
     left: 0; /* Screen ke left pe chipkane ke liye */
     height: 100vh;
-    width: 80px;
+    width: 65px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 27px 0;
     z-index: 100; /* Sidebar ko baqi cheezon ke upar rakhne ke liye */
 }
 
 .logo {
-  display: block; /* a tag ko height/width dene ke liye zaroori hai */
-  width: 45px; /* Apni marzi se adjust kar lena */
-  height: 45px;
-  background-image: url('logo/zaail.svg'); /* Sidha tumhari file target ho rahi hai */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: all 0.3s ease;
-}
+    display: block; /* a tag ko height/width dene ke liye zaroori hai */
+    width: 35px; /* Apni marzi se adjust kar lena */
+    height: 35px;
+    background-image: url('logo/zaail.svg'); /* Sidha tumhari file target ho rahi hai */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6; /* Thora faded look */
+    transition: all 0.3s ease;
+  }
 
 .logo:hover {
-  transform: scale(1.05); /* Thora sa smooth hover effect */
+    transform: scale(1.05); /* Thora sa smooth hover effect */
 }
+
+/* Container for Icons (Desktop Default - Vertical) */
+.social-icons {
+    display: flex;
+    gap: 24px; /* Icons ke darmiyan space */
+    align-items: center;
+}
+
+.desktop-icons {
+    flex-direction: column;
+}
+
+/* Mobile icons ko desktop pe hide rakhna hai */
+.mobile-icons {
+    display: none; 
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px; /* Footer ke text ke baad thora space */
+}
+
+/* General Icon Class */
+.social-icon {
+    display: block;
+    width: 24px; /* Wireframe ke mutabiq chote, neat icons */
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6; /* Thora faded look */
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 1; /* Hover par fully visible */
+    transform: scale(1.1);
+}
+
+/* Specific Icon Background Paths */
+.icon-x { background-image: url('icons/xtwitter.svg'); }
+.icon-ig { background-image: url('icons/instagram.svg'); }
+.icon-in { background-image: url('icons/linkedin.svg'); }
+.icon-git { background-image: url('icons/github.svg'); }
 
 /* Header Container */
 header {
@@ -121,7 +164,7 @@ footer {
     padding: 40px 20px;
     text-align: center;
     color: #52525b;
-    font-size: 0.85rem;
+    font-size: 15px;
     width: 100%;
 }
 
@@ -129,7 +172,7 @@ footer {
 .signature {
     font-family: 'Playfair Display', serif; /* Poetic aur deep aesthetic ke liye */
     font-style: italic;
-    margin-top: 10px;
+    margin-top: 4px;
     opacity: 0.6;
     font-size: 1.1rem;
 }
@@ -151,6 +194,23 @@ footer {
         padding: 0 1rem;
     }
 
+    .desktop-icons {
+        display: none !important; /* Top bar se gayab */
+    }
+
+    .mobile-icons {
+       display: flex !important; /* Footer main show honge */
+    }
+
+    .social-icons {
+       gap: 20px;
+    }
+    
+    .social-icon {
+       width: 22px;
+       height: 22px;
+    }
+
     .logo {
         width: 35px;
         height: 35px;
@@ -158,5 +218,13 @@ footer {
 
     .hero h1 {
         font-size: 2.4rem;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .signature {
+        font-size: 12px;
     }
 }
