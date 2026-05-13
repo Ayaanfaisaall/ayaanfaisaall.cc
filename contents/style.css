@@ -1,0 +1,162 @@
+/* Google Fonts Import (Sabse upar rakhna hai) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;800&family=Playfair+Display:ital@1&display=swap');
+
+/* Basic Reset */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Outfit', sans-serif; /* Clean aur modern font */
+}
+
+/* Main Body Settings */
+body {
+    background-color: #09090b;
+    background-image: url('background/background.svg');
+    background-size: cover;
+    background-position: left fixed;
+    background-repeat: no-repeat;
+    color: #e4e4e7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 80px; /* Desktop par sidebar ki jagah chhorne ke liye */
+}
+
+/* Glassmorphism Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support ke liye */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Desktop Sidebar (Left side) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0; /* Screen ke left pe chipkane ke liye */
+    height: 100vh;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 100; /* Sidebar ko baqi cheezon ke upar rakhne ke liye */
+}
+
+.logo {
+  display: block; /* a tag ko height/width dene ke liye zaroori hai */
+  width: 45px; /* Apni marzi se adjust kar lena */
+  height: 45px;
+  background-image: url('logo/zaail.svg'); /* Sidha tumhari file target ho rahi hai */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* Thora sa smooth hover effect */
+}
+
+/* Header Container */
+header {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Links */
+nav a {
+    color: #a1a1aa;
+    text-decoration: none;
+    /* margin-left: 30px; */
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover { 
+    color: #fff; 
+}
+
+/* Hero Section (Main Content) */
+.hero {
+    text-align: center;
+    margin: 100px 20px;
+    max-width: 700px;
+}
+
+/* Hero Main Heading */
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    background: linear-gradient(to right, #fff, #71717a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+
+/* Hero Paragraph Text */
+.hero p {
+    font-size: 1.2rem;
+    color: #a1a1aa;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Footer Container */
+footer {
+    margin-top: auto;
+    padding: 40px 20px;
+    text-align: center;
+    color: #52525b;
+    font-size: 0.85rem;
+    width: 100%;
+}
+
+/* Signature Styling (~ Zail) */
+.signature {
+    font-family: 'Playfair Display', serif; /* Poetic aur deep aesthetic ke liye */
+    font-style: italic;
+    margin-top: 10px;
+    opacity: 0.6;
+    font-size: 1.1rem;
+}
+
+/* Mobile Screens (768px ya choti screens ke liye) */
+@media (max-width: 768px) {
+    body {
+        background-image: url('background/backgroundm.svg');
+        background-position: center fixed;
+        padding-left: 0; /* Mobile pe left padding hata di */
+        padding-top: 70px; /* Mobile header ki jagah banane ke liye */
+    }
+    
+    .sidebar {
+        height: 70px;
+        width: 100%;
+        bottom: auto; /* Desktop wala stretch cancel kiya */
+        flex-direction: row; /* Items ko left-to-right kar diya */
+        padding: 0 1rem;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+}
