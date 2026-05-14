@@ -45,7 +45,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 27px 0;
+    padding: 17px 0;
     z-index: 100; /* Sidebar ko baqi cheezon ke upar rakhne ke liye */
 }
 
@@ -187,7 +187,7 @@ footer {
     }
     
     .sidebar {
-        height: 70px;
+        height: 56px;
         width: 100%;
         bottom: auto; /* Desktop wala stretch cancel kiya */
         flex-direction: row; /* Items ko left-to-right kar diya */
@@ -212,8 +212,8 @@ footer {
     }
 
     .logo {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
 
     .hero h1 {
