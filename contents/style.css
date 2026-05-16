@@ -1,15 +1,42 @@
-/* Google Fonts Import (Sabse upar rakhna hai) */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;800&family=Playfair+Display:ital@1&display=swap');
+@font-face {
+    font-family: 'Basement Grotesque';
+    src: url('fonts/basementgrotesque/BasementGrotesque-Black_v1.202.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
 
-/* Basic Reset */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('fonts/ibmplexmono/IBMPlexMono-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/playfairdisplay/PlayfairDisplay-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
 * { 
     margin: 0; 
     padding: 0; 
     box-sizing: border-box; 
-    font-family: 'Outfit', sans-serif; /* Clean aur modern font */
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Main Body Settings */
 body {
     background-color: #09090b;
     background-image: url('background/background.svg');
@@ -21,24 +48,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 80px; /* Desktop par sidebar ki jagah chhorne ke liye */
+    padding-left: 80px;
 }
 
-/* Glassmorphism Effect */
 .glass {
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Safari support ke liye */
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Desktop Sidebar (Left side) */
 .sidebar {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 0; /* Screen ke left pe chipkane ke liye */
+    left: 0;
     height: 100vh;
     width: 65px;
     display: flex;
@@ -46,29 +71,28 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 17px 0;
-    z-index: 100; /* Sidebar ko baqi cheezon ke upar rakhne ke liye */
+    z-index: 100;
 }
 
 .logo {
-    display: block; /* a tag ko height/width dene ke liye zaroori hai */
-    width: 35px; /* Apni marzi se adjust kar lena */
+    display: block;
+    width: 35px;
     height: 35px;
-    background-image: url('logo/zaail.svg'); /* Sidha tumhari file target ho rahi hai */
+    background-image: url('logo/zaail.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.6; /* Thora faded look */
+    opacity: 0.6;
     transition: all 0.3s ease;
-  }
-
-.logo:hover {
-    transform: scale(1.05); /* Thora sa smooth hover effect */
 }
 
-/* Container for Icons (Desktop Default - Vertical) */
+.logo:hover {
+    transform: scale(1.05);
+}
+
 .social-icons {
     display: flex;
-    gap: 24px; /* Icons ke darmiyan space */
+    gap: 24px;
     align-items: center;
 }
 
@@ -76,38 +100,54 @@ body {
     flex-direction: column;
 }
 
-/* Mobile icons ko desktop pe hide rakhna hai */
 .mobile-icons {
     display: none; 
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 15px; /* Footer ke text ke baad thora space */
+    margin-bottom: 15px;
 }
 
-/* General Icon Class */
 .social-icon {
     display: block;
-    width: 24px; /* Wireframe ke mutabiq chote, neat icons */
+    width: 24px;
     height: 24px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.6; /* Thora faded look */
+    opacity: 0.6;
     transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-    opacity: 1; /* Hover par fully visible */
+    opacity: 1;
     transform: scale(1.1);
 }
 
-/* Specific Icon Background Paths */
+.menu-icon {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.menu-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-icon:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
 .icon-x { background-image: url('icons/xtwitter.svg'); }
 .icon-ig { background-image: url('icons/instagram.svg'); }
 .icon-in { background-image: url('icons/linkedin.svg'); }
 .icon-git { background-image: url('icons/github.svg'); }
+.icon-menu { background-image: url('icons/menu.svg'); }
 
-/* Header Container */
 header {
     width: 90%;
     max-width: 1200px;
@@ -118,12 +158,10 @@ header {
     align-items: center;
 }
 
-/* Navigation Links */
 nav a {
     color: #a1a1aa;
     text-decoration: none;
-    /* margin-left: 30px; */
-    font-size: 0.9rem;
+    font-size: 14.4px;
     transition: color 0.3s ease;
 }
 
@@ -131,34 +169,49 @@ nav a:hover {
     color: #fff; 
 }
 
-/* Hero Section (Main Content) */
-.hero {
-    text-align: center;
-    margin: 100px 20px;
-    max-width: 700px;
+.greeting {
+    font-family: 'IBM Plex Mono';
+    font-size: 20px;
+    font-weight: 300;
+    color: #a1a1aa;
+    display: block;
+    margin-bottom: 3px;
+    letter-spacing: 1px;
 }
 
-/* Hero Main Heading */
+.hero {
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    flex: 1;
+    width: 100%;
+    max-width: 825px;
+    margin: 0 auto;
+}
+
 .hero h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 24px;
-    background: linear-gradient(to right, #fff, #71717a);
+    font-family: 'Basement Grotesque';
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    background-color: #ffffff;
+    text-transform: capitalize;
+    opacity: 0.6;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    letter-spacing: -1px;
 }
 
-/* Hero Paragraph Text */
 .hero p {
-    font-size: 1.2rem;
+    font-size: 19.2px;
+    font-weight: 300;
+    text-align: justify;
     color: #a1a1aa;
     line-height: 1.6;
-    font-weight: 300;
 }
 
-/* Footer Container */
 footer {
     margin-top: auto;
     padding: 40px 20px;
@@ -168,38 +221,36 @@ footer {
     width: 100%;
 }
 
-/* Signature Styling (~ Zail) */
 .signature {
-    font-family: 'Playfair Display', serif; /* Poetic aur deep aesthetic ke liye */
+    font-family: 'Playfair Display', serif;
     font-style: italic;
     margin-top: 4px;
     opacity: 0.6;
-    font-size: 1.1rem;
+    font-size: 17.6px;
 }
 
-/* Mobile Screens (768px ya choti screens ke liye) */
 @media (max-width: 768px) {
     body {
         background-image: url('background/backgroundm.svg');
         background-position: center fixed;
-        padding-left: 0; /* Mobile pe left padding hata di */
-        padding-top: 70px; /* Mobile header ki jagah banane ke liye */
+        padding-left: 0;
+        padding-top: 70px;
     }
     
     .sidebar {
         height: 56px;
         width: 100%;
-        bottom: auto; /* Desktop wala stretch cancel kiya */
-        flex-direction: row; /* Items ko left-to-right kar diya */
-        padding: 0 1rem;
+        bottom: auto;
+        flex-direction: row;
+        padding: 0 16px;
     }
 
     .desktop-icons {
-        display: none !important; /* Top bar se gayab */
+        display: none !important;
     }
 
     .mobile-icons {
-       display: flex !important; /* Footer main show honge */
+       display: flex !important;
     }
 
     .social-icons {
@@ -211,13 +262,32 @@ footer {
        height: 22px;
     }
 
+    .menu-icon {
+        position: fixed; 
+        top: 13px; 
+        right: 20px;
+        z-index: 105;
+    }
+
     .logo {
         width: 30px;
         height: 30px;
     }
 
+    .greeting {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: 0 35px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
     .hero h1 {
-        font-size: 2.4rem;
+        font-size: 38.4px;
     }
 
     footer {
