@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-family: 'Space Grotesk';
+    src: url('fonts/spacegrotesk/SpaceGrotesk-Regular.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -34,7 +34,7 @@
     margin: 0; 
     padding: 0; 
     box-sizing: border-box; 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 body {
@@ -49,7 +49,6 @@ body {
     flex-direction: column;
     align-items: center;
     padding-left: 80px;
-    /* FIX: Absolute footer ky liye relative context aur overlap se bachne ky liye padding */
     position: relative;
     padding-bottom: 80px;
 }
@@ -187,10 +186,9 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    /* FIX: flex: 1; hata dia, ab sirf auto margin se proper center hoga */
     margin: auto; 
     width: 100%;
-    max-width: 825px;
+    max-width: 950px;
 }
 
 .hero h1 {
