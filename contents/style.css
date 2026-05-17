@@ -125,10 +125,37 @@ body {
     transform: scale(1.1);
 }
 
-.menu-icon {
+/* CHANGED: New top-nav wrapper to handle positioning for both desktop menu and mobile icon */
+.top-nav {
     position: absolute;
-    top: 30px;
+    top: 35px;
     right: 50px;
+    z-index: 105;
+}
+
+/* CHANGED: Desktop menu layout */
+.desktop-menu {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* CHANGED: Overriding .heading class specifically inside nav links so they sit inline and are clickable */
+.desktop-menu .heading {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.desktop-menu .heading:hover {
+    color: #fff;
+}
+
+/* CHANGED: Hidden on desktop by default, removed old absolute positioning */
+.menu-icon {
+    display: none;
     cursor: pointer;
     opacity: 0.6;
     transition: all 0.3s ease;
@@ -171,7 +198,7 @@ nav a:hover {
     color: #fff; 
 }
 
-.greeting {
+.heading {
     font-family: 'IBM Plex Mono';
     font-size: 20px;
     font-weight: 300;
@@ -213,8 +240,45 @@ nav a:hover {
     line-height: 1.6;
 }
 
+/* Vertical Email Styles */
+.right-email {
+    position: fixed;
+    bottom: 0;
+    right: 50px; /* Menu icon ki alignment ke hisaab se */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    z-index: 100;
+}
+
+.right-email a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: #a1a1aa;
+    text-decoration: none;
+    letter-spacing: 2px;
+    /* Yeh property text ko vertical kar deti hai */
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.right-email a:hover {
+    color: #fff;
+    transform: translateY(-5px); /* Hover par thora sa upar move karega */
+}
+
+/* Yeh neechay aik clean decorative line banayega */
+.right-email::after {
+    content: "";
+    width: 1px;
+    height: 90px;
+    background-color: #a1a1aa;
+    opacity: 0.3;
+}
+
 footer {
-    /* FIX: Document flow se nikal kr absolute krdia */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -267,7 +331,14 @@ footer {
        height: 22px;
     }
 
+    /* CHANGED: Hide desktop menu links on mobile */
+    .desktop-menu {
+        display: none;
+    }
+
+    /* CHANGED: Show menu icon on mobile and lock it to the top right */
     .menu-icon {
+        display: block;
         position: fixed; 
         top: 13px; 
         right: 20px;
@@ -293,6 +364,10 @@ footer {
 
     .hero h1 {
         font-size: 38.4px;
+    }
+
+    .right-email {
+        display: none;
     }
 
     footer {
