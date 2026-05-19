@@ -1,0 +1,10 @@
+.timeline p {
+    font-size: 19.2px;
+    font-weight: 300;
+    text-align: justify;
+    color: #ffffff;
+    opacity: 0.6;
+    line-height: 1.6;
+    margin-bottom: 15px; 
+    margin-top: 15px; 
+}

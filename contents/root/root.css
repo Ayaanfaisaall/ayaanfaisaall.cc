@@ -1,0 +1,9 @@
+.root {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 19.2px;
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
