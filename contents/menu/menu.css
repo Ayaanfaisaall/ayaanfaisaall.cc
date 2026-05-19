@@ -22,6 +22,19 @@
     transition: opacity 0.3s ease, color 0.3s ease;
 }
 
+.menu-name::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../icons/link.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
 .menu:hover .menu-name {
     opacity: 1;
     color: #ffffff;
