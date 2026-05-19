@@ -1,0 +1,30 @@
+.menus {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    color: inherit;
+}
+
+.menu-name {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 19.2px;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.menu:hover .menu-name {
+    opacity: 1;
+    color: #ffffff;
+}
+
+

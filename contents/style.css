@@ -73,6 +73,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 17px 0;
+    padding-bottom: 30px;
     z-index: 100;
 }
 
@@ -202,7 +203,8 @@ nav a:hover {
     font-family: 'IBM Plex Mono';
     font-size: 20px;
     font-weight: 300;
-    color: #a1a1aa;
+    color: #ffffff;
+    opacity: 0.6;
     display: block;
     margin-bottom: 3px;
     letter-spacing: 1px;
@@ -236,7 +238,8 @@ nav a:hover {
     font-size: 19.2px;
     font-weight: 300;
     text-align: justify;
-    color: #a1a1aa;
+    color: #ffffff;
+    opacity: 0.6;
     line-height: 1.6;
 }
 
@@ -266,7 +269,7 @@ nav a:hover {
 
 .right-email a:hover {
     color: #fff;
-    transform: translateY(-5px); /* Hover par thora sa upar move karega */
+    transform: rotate(180deg);
 }
 
 /* Yeh neechay aik clean decorative line banayega */
@@ -350,7 +353,7 @@ footer {
         height: 30px;
     }
 
-    .greeting {
+    .heading {
         font-size: 18px;
     }
 

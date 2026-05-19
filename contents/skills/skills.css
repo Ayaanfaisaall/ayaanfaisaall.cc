@@ -1,0 +1,32 @@
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 19.2px;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.skill-item:hover .skill-name {
+    opacity: 1;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
