@@ -43,4 +43,8 @@
     .link {
         font-size: 16px;
     }
+    .link::after {
+        width: 13px;
+        height: 13px;
+    }
 }
