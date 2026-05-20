@@ -27,5 +27,9 @@
     color: #ffffff;
 }
 
-
+@media (max-width: 768px){
+    .education-name{
+        font-size: 16px;
+    }
+}
 

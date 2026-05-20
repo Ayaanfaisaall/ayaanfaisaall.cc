@@ -40,4 +40,12 @@
     color: #ffffff;
 }
 
-
+@media (max-width: 768px) {
+    .project-name{
+        font-size: 16px;
+    }
+    .project-name::after{
+        width: 13px;
+        height: 13px;
+    }
+}
