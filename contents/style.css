@@ -228,7 +228,7 @@ nav a:hover {
     margin-bottom: 3px;
     margin-top: 0px;
     background-color: #ffffff;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     opacity: 0.6;
     -webkit-background-clip: text;
     background-clip: text;
