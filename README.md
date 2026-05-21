@@ -18,7 +18,6 @@ To get a local copy up and running, follow these simple steps.
 
 ### Prerequisites
 * A modern web browser
-* node.js
 
 ### Installation
 1. Clone the repo
@@ -33,7 +32,7 @@ cd ayaanfaisaall.cc/contents
 
 3. Start a development server
 ``````bash
-npx live-server
+python -m http.server
 ``````
 
 ## Credits & Attribution
